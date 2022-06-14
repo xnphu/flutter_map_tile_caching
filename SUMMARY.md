@@ -5,7 +5,7 @@
 ## Get Started
 
 * [Installation](get-started/installation.md)
-* [Setup](get-started/setup.md)
+* [Additional Setup](get-started/additional-setup.md)
 * [Example](get-started/example.md)
 
 ## Usage

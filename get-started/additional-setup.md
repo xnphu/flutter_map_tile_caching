@@ -1,6 +1,6 @@
-# Setup
+# Additional Setup
 
-## Additional Android Setup
+## Android
 
 A few more steps are required on Android due to the background download functionality, unfortunately even if you do not intend to use the functionality. This is due to the way the dependency used to perform background downloading works.
 
@@ -19,7 +19,7 @@ For these steps please go to these sites:
 This library is thoroughly tested on Android devices, specifically Android 11 and 12
 {% endhint %}
 
-## Additional iOS Setup
+## iOS
 
 A few more steps are required on iOS due to the background download functionality, even though this functionality is unfortunately currently disabled on iOS. This is due to the way the dependency used to perform background downloading works. For these steps please go to these sites:
 
@@ -31,6 +31,6 @@ A few more steps are required on iOS due to the background download functionalit
 This library has not been tested on iOS devices
 {% endhint %}
 
-## Setup For Other Platforms
+## Other Platforms
 
 This library has not been tested on other platforms, although it should work for them. To configure this library, you may need to do some research yourself.

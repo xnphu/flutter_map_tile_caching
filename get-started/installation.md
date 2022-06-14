@@ -33,3 +33,18 @@ dependency_overrides:
             # ref: main 
 ```
 {% endcode %}
+
+## Import
+
+After installing the package, import it into the necessary files in your project:
+
+```dart
+import 'package:flutter_map_tile_caching/flutter_map_tile_caching.dart'; // Suitable for most situations
+import 'package:flutter_map_tile_caching/fmtc_advanced.dart'; // Only import if required functionality is not exposed by 'flutter_map_tile_caching.dart'
+```
+
+{% hint style="success" %}
+This package should now be mostly setup! Make sure you follow through with the appropriate [Additional Setup](additional-setup.md) instructions for your platform.
+
+Before continuing with usage, make sure you comply with the appropriate rules and ToS for your server. Some have stricter rules than others. This package or the creator(s) are not responsible for any violations you make using this package.
+{% endhint %}

@@ -1,6 +1,6 @@
 # Example
 
-This package contains a full example application showcasing most of the features of this package. Simply clone the this project, enter the 'example' directory, and then build for your desired platform:
+This package contains a full example application showcasing most of the features of this package. Simply [clone this project](https://github.com/JaffaKetchup/flutter\_map\_tile\_caching.git), open the 'example' directory, and then build for your desired platform using Dart and Flutter:
 
 * Android & Windows users should run 'androidBuilder.bat'
 * Android & Linux/MacOS users should run 'androidBuilder.sh' (bash, untested)

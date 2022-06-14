@@ -1,8 +1,9 @@
 # Table of contents
 
-* [Page 1](README.md)
-  * [Example](page-1/example.md)
+* [flutter\_map\_tile\_caching](README.md)
 
-## Usage
+## Get Started
 
-* [Full API Reference](https://pub.dev/documentation/flutter\_map\_tile\_caching/latest/flutter\_map\_tile\_caching/flutter\_map\_tile\_caching-library.html)
+* [Installation](get-started/installation.md)
+* [Setup](get-started/setup.md)
+* [Example](get-started/example.md)

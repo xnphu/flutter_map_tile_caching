@@ -5,7 +5,7 @@
 ## Get Started
 
 * [Installation](get-started/installation.md)
-* [Additional Setup](get-started/additional-setup.md)
+* [Additional Setup](get-started/setup.md)
 * [Example](get-started/example.md)
 
 ## Usage
@@ -14,3 +14,7 @@
 * [Terminology](usage/terminology.md)
 * [Basic Usage](usage/basic-usage.md)
 * [Using Roots & Stores](usage/using-roots-and-stores.md)
+
+***
+
+* [Temp](temp.md)

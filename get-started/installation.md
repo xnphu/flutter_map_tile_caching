@@ -44,7 +44,7 @@ import 'package:flutter_map_tile_caching/fmtc_advanced.dart'; // Only import if 
 ```
 
 {% hint style="success" %}
-This package should now be mostly setup! Make sure you follow through with the appropriate [Additional Setup](additional-setup.md) instructions for your platform.
+This package should now be mostly setup! Make sure you follow through with the appropriate [Additional Setup](setup.md) instructions for your platform.
 
 Before continuing with usage, make sure you comply with the appropriate rules and ToS for your server. Some have stricter rules than others. This package or the creator(s) are not responsible for any violations you make using this package.
 {% endhint %}

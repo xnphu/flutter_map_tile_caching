@@ -13,6 +13,8 @@ layout: landing
 
 [![ko-fi](https://camo.githubusercontent.com/cd07f1a5d90e454e7bbf69d22ebe4cdbd3a0b3dcf56ba0b6c2495a8e99c776be/68747470733a2f2f6b6f2d66692e636f6d2f696d672f676974687562627574746f6e5f736d2e737667)](https://ko-fi.com/N4N151INN)
 
+## Source Code
+
 {% embed url="https://github.com/JaffaKetchup/flutter_map_tile_caching" %}
 Visit the GitHub repository
 {% endembed %}
@@ -20,3 +22,57 @@ Visit the GitHub repository
 {% embed url="https://pub.dev/packages/flutter_map_tile_caching" %}
 Visit the pub.dev package listing
 {% endembed %}
+
+## Feature Highlights
+
+<details>
+
+<summary>Browse Caching</summary>
+
+Setup customisable caching that works in the background, and makes your app more reliable for your user!
+
+You choose the behaviour, we do the right thing. Only display existing cached tiles to your user, or choose between updating the cache every time the tile is loaded, or only if it has expired. All of this, with only a tiny performance impact, and a visible increase in loading speed compared to the network!
+
+</details>
+
+<details>
+
+<summary>Bulk Downloading</summary>
+
+Use alongside browse caching, or just standalone!
+
+Allow your user to choose from a multitude of region shapes to download, more than the official Google Maps app provides:
+
+* Rectangle regions are formed from 2 coordinates, representing the north-west and south-east corners. The code automatically creates the other necessary corners.
+* Circle regions are formed from a center coordinate and a radius. Internal 'outline' coordinates are generated per degree automatically from this information.
+* Line-based regions are formed from multiple coordinates and a radius, creating a locus. Internal 'outline' coordinates are generated for every vertex and curve.
+
+Save time and storage with features like sea tile removal and multithreading, enabled by default.
+
+</details>
+
+<details>
+
+<summary>Recoverable Downloads</summary>
+
+Oh no! For some reason, the download stopped unexpectedly, and now you have no way of knowing which region was created to download again. But, with recoverable downloads by default, you do have a way.
+
+When starting a download, a special one-off file is stored that contains persistent information about the running download. This file is then deleted at the end of a successful download.
+
+Therefore, if the file exists, but there is no ongoing download, an error must have happened. You can use the inbuilt functionality to check for recoverable downloads on initialization, and restart them quickly and easily if necessary.
+
+</details>
+
+<details>
+
+<summary>Background Downloading</summary>
+
+Even some professional apps can't compete with this! Perform your bulk downloading in the background on Android, with minimal time hit! Optionally configure notifications to display to your users as well.
+
+</details>
+
+## Get Help
+
+Not quite sure about something? No problem.
+
+Raise an issue on GitHub, or get quicker support on the official [flutter\_map Discord server](https://github.com/fleaflet/flutter\_map#discord-server)'s plugin channel. I'm always happy to help as soon as possible :smile:.

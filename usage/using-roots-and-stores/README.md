@@ -37,14 +37,14 @@ Only use this if you cannot use asynchronous techniques in your current context,
 
 After this, you can chain any of the following:
 
-| API Getter | Structure | Explanation                                                                               |
-| ---------- | --------- | ----------------------------------------------------------------------------------------- |
-| `access`   | Both      | Access the real directory structure - only for advanced usage                             |
-| `manage`   | Both      | Perform management tasks, such as creation and deletion                                   |
-| `stats`    | Both      | Retrieve statistics, such as size and length                                              |
-| `recovery` | Roots     | Manage bulk download recovery                                                             |
-| `download` | Stores    | Manage bulk downloads                                                                     |
-| `metadata` | Stores    | Use a simple key-value pair store - suitable for storing simple store related information |
+| API Getter                    | Structure | Explanation                                                                               |
+| ----------------------------- | --------- | ----------------------------------------------------------------------------------------- |
+| ``[`access`](access.md)``     | Both      | Access the real directory structure - only for advanced usage                             |
+| ``[`manage`](manage.md)``     | Both      | Perform management tasks, such as creation and deletion                                   |
+| ``[`stats`](statistics.md)``  | Both      | Retrieve statistics, such as size and length                                              |
+| ``[`recovery`](recovery.md)`` | Roots     | Manage bulk download recovery                                                             |
+| ``[`download`](download.md)`` | Stores    | Manage bulk downloads                                                                     |
+| ``[`metadata`](metadata.md)`` | Stores    | Use a simple key-value pair store - suitable for storing simple store related information |
 
 So, for example, to access statistics for a store, you might use:
 
@@ -57,5 +57,7 @@ final stats = FMTC.instance['storeName'].stats;
 ```
 
 {% hint style="info" %}
-Note that many of the methods and getters beneath the ones listed above, for example those under `manage`, have asynchronous versions which are recommended for performance. To use them, if available, just add 'Async' to the end of the method/getter. For example, `ready` and `readyAsync`.
+Note that many of the methods and getters beneath the ones listed above, for example those under `manage`, have asynchronous versions which are recommended for performance.
+
+To use them, if available, just add 'Async' to the end of the method/getter. For example, `ready` and `readyAsync`.
 {% endhint %}

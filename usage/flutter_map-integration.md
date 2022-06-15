@@ -1,8 +1,6 @@
-# Other Methods
+# flutter\_map Integration
 
-## Tile Provider: `getTileProvider` <a href="#tile-provider" id="tile-provider"></a>
-
-Stores only have the method `getTileProvider()`. This is the point of integration with flutter\_map, providing browse caching through a custom image provider, and can be used as so:
+Stores also have the method `getTileProvider()`. This is the point of integration with flutter\_map, providing browse caching through a custom image provider, and can be used as so:
 
 ```dart
 import 'package:flutter_map/flutter_map.dart';

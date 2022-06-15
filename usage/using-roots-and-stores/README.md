@@ -4,7 +4,7 @@ Once you can access `FMTC.instance`, you can chain on other getters and methods.
 
 {% tabs %}
 {% tab title="Root" %}
-To get the root directory and it's associated information, just chain on `rootDirectory`, as so:
+To get the Root and it's associated information, just chain on `rootDirectory`, as so:
 
 ```dart
 final root = FMTC.instance.rootDirectory;
@@ -12,16 +12,18 @@ final root = FMTC.instance.rootDirectory;
 {% endtab %}
 
 {% tab title="Store - Manual Creation" %}
-To use a store without automatically creating it (recommended for performance), use `()` (`call()`). Place the store name inside the parenthesis. For example:
+To use a Store without automatically creating it (recommended for performance), use `()` (`call()`). Place the store name inside the parenthesis. For example:
 
 ```dart
 final store = FMTC.instance('storeName');
 await store.manage.createAsync(); // Create the store if necessary
 ```
+
+All examples in this documentation will use this method of accessing Stores, assuming that they are already ready.
 {% endtab %}
 
 {% tab title="Store - Automatic Creation" %}
-To use a store and automatically synchronously create it if it doesn't exist, use `[]`. Place the store name inside the parenthesis. For example:
+To use a Store and automatically synchronously create it if it doesn't exist, use `[]`. Place the store name inside the parenthesis. For example:
 
 ```dart
 final store = FMTC.instance['storeName'];
@@ -37,14 +39,20 @@ Only use this if you cannot use asynchronous techniques in your current context,
 
 After this, you can chain any of the following:
 
-| API Getter                    | Structure | Explanation                                                                               |
-| ----------------------------- | --------- | ----------------------------------------------------------------------------------------- |
-| ``[`access`](access.md)``     | Both      | Access the real directory structure - only for advanced usage                             |
-| ``[`manage`](manage.md)``     | Both      | Perform management tasks, such as creation and deletion                                   |
-| ``[`stats`](statistics.md)``  | Both      | Retrieve statistics, such as size and length                                              |
-| ``[`recovery`](recovery.md)`` | Roots     | Manage bulk download recovery                                                             |
-| ``[`download`](download.md)`` | Stores    | Manage bulk downloads                                                                     |
-| ``[`metadata`](metadata.md)`` | Stores    | Use a simple key-value pair store - suitable for storing simple store related information |
+{% hint style="info" %}
+Many of the methods and getters beneath the ones listed here, for example those under `manage`, have asynchronous versions which are recommended for performance.
+
+To use them, if available, just add 'Async' to the end of the method/getter. For example, `ready` and `readyAsync`.
+{% endhint %}
+
+| API Getter                         | Structure | Explanation                                                                               |
+| ---------------------------------- | --------- | ----------------------------------------------------------------------------------------- |
+| ``[`access`](access-advanced.md)`` | Both      | Access the real directory structure - only for advanced usage                             |
+| ``[`manage`](manage.md)``          | Both      | Perform management tasks, such as creation and deletion                                   |
+| ``[`stats`](statistics.md)``       | Both      | Retrieve statistics, such as size and length                                              |
+| ``[`recovery`](recovery.md)``      | Roots     | Manage bulk download recovery                                                             |
+| ``[`download`](download.md)``      | Stores    | Manage bulk downloads                                                                     |
+| ``[`metadata`](metadata.md)``      | Stores    | Use a simple key-value pair store - suitable for storing simple store related information |
 
 So, for example, to access statistics for a store, you might use:
 
@@ -56,8 +64,4 @@ final stats = FMTC.instance('storeName').stats;
 final stats = FMTC.instance['storeName'].stats;
 ```
 
-{% hint style="info" %}
-Note that many of the methods and getters beneath the ones listed above, for example those under `manage`, have asynchronous versions which are recommended for performance.
-
-To use them, if available, just add 'Async' to the end of the method/getter. For example, `ready` and `readyAsync`.
-{% endhint %}
+Technically, all of these API methods are optional and you may never have to use them in your app, although this is not recommended. Also note that the method to get a `TileProvider` for a Store is not included in this table: see [flutter\_map Integration](../flutter\_map-integration.md).

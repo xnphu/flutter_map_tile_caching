@@ -10,6 +10,8 @@ TileLayerOptions(
 ),
 ```
 
+## Tile Provider Settings
+
 The method optionally takes a `FMTCTileProviderSettings` to override any defaults, whether the package default, or the default set in the initialisation function.
 
 `FMTCTileProviderSettings` can take the following arguments:
@@ -19,3 +21,19 @@ The method optionally takes a `FMTCTileProviderSettings` to override any default
 | `behavior`            | `CacheBehavior` | Logic used for storage and retrieval of tiles                                        | `CacheBehavior.cacheFirst` |
 | `cachedValidDuration` | `Duration`      | Duration until a tile expires and needs to be fetched again                          | `const Duration(days: 16)` |
 | `maxStoreLength`      | `int`           | Maximum number of tiles allowed in a cache store before the oldest tile gets deleted | `0`: disabled              |
+
+## Check If A Tile Is Cached
+
+The object returned by this function also has the method `checkTileCached`, with the following parameters:
+
+```dart
+FMTC.instance('storeName').getTileProvider().checkTileCached(
+    coords: Coords<num>,
+    options: TileLayerOptions,
+    customUrl: String?,
+ )
+```
+
+Pass the `coords` of the tile to check for, and the same/similar `TileLayerOptions` used to store the tile in the first place.
+
+It will return a boolean dependent on whether or not the tile could be found.

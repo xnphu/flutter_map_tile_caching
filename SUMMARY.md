@@ -21,3 +21,7 @@
   * [Metadata](usage/using-roots-and-stores/metadata.md)
   * [Access (advanced)](usage/using-roots-and-stores/access-advanced.md)
 * [flutter\_map Integration](usage/flutter\_map-integration.md)
+
+## Bulk Downloading
+
+* [Bulk Downloading](bulk-downloading/bulk-downloading.md)

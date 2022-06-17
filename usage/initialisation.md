@@ -1,4 +1,4 @@
-# Basic Usage
+# Initialisation
 
 The main basis of this package is the `FlutterMapTileCaching` object. There are other high level objects, but they are usually for more advanced usage, and can be explored in more detail through the API documentation.
 
@@ -10,7 +10,7 @@ This singleton must first be initialised, usually in the `main` (asynchronous) f
 
 Once initialised, it is safe to use `FMTC.instance.` At this point, most functionality is accessed through chaining.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 You must call `initialise()` before trying to use `instance.`Failure to do so will throw a `StateError`.
 {% endhint %}
 

@@ -8,7 +8,7 @@ This package contains a full example application showcasing most of the features
 ... to build the smallest output .apk files possible.\
 There is no build automation for iOS devices: users will need to build manually as usual.
 
-{% hint style="info" %}
+{% hint style="danger" %}
 By using the example application, you must comply to your tile server's ToS. OpenStreetMap's (the default throughout the application) can be [found here](https://operations.osmfoundation.org/policies/tiles). If you cannot comply to these rules, you should find one that you can comply to and get the appropriate source URL (which can be customised in the application).
 {% endhint %}
 

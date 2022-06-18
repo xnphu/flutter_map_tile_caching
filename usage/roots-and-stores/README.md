@@ -45,14 +45,14 @@ Many of the methods and getters beneath the ones listed here, for example those 
 To use them, if available, just add 'Async' to the end of the method/getter. For example, `ready` and `readyAsync`.
 {% endhint %}
 
-| API Getter                         | Structure | Explanation                                                                               |
-| ---------------------------------- | --------- | ----------------------------------------------------------------------------------------- |
-| ``[`access`](access-advanced.md)`` | Both      | Access the real directory structure - only for advanced usage                             |
-| ``[`manage`](manage.md)``          | Both      | Perform management tasks, such as creation and deletion                                   |
-| ``[`stats`](statistics.md)``       | Both      | Retrieve statistics, such as size and length                                              |
-| ``[`recovery`](recovery.md)``      | Roots     | Manage bulk download recovery                                                             |
-| ``[`download`](download.md)``      | Stores    | Manage bulk downloads                                                                     |
-| ``[`metadata`](metadata.md)``      | Stores    | Use a simple key-value pair store - suitable for storing simple store related information |
+| API Getter                    | Structure | Explanation                                                                               |
+| ----------------------------- | --------- | ----------------------------------------------------------------------------------------- |
+| ``[`access`](access.md)``     | Both      | Access the real directory structure - only for advanced usage                             |
+| ``[`manage`](manage.md)``     | Both      | Perform management tasks, such as creation and deletion                                   |
+| ``[`stats`](statistics.md)``  | Both      | Retrieve statistics, such as size and length                                              |
+| ``[`recovery`](recovery.md)`` | Roots     | Manage bulk download recovery                                                             |
+| ``[`download`](download.md)`` | Stores    | Manage bulk downloads                                                                     |
+| ``[`metadata`](metadata.md)`` | Stores    | Use a simple key-value pair store - suitable for storing simple store related information |
 
 So, for example, to access statistics for a store, you might use:
 
@@ -64,4 +64,4 @@ final stats = FMTC.instance('storeName').stats;
 final stats = FMTC.instance['storeName'].stats;
 ```
 
-Technically, all of these API methods are optional and you may never have to use them in your app, although this is not recommended. Also note that the method to get a `TileProvider` for a Store is not included in this table: see [flutter\_map Integration](../flutter\_map-integration.md).
+Technically, all of these API methods are optional and you may never have to use them in your app, although this is not recommended. Also note that the method to get a `TileProvider` for a Store is not included in this table: see [flutter\_map Integration](../integration.md).

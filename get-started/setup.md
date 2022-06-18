@@ -27,7 +27,7 @@ A few more steps are required on iOS due to the background download functionalit
   You should not need to follow the instructions for `BackgroundFetch.scheduleTask`, but do so if you receive build errors - the custom task identifiers asked for in the last step is exactly 'backgroundTileDownload'.
 * [`permission_handler` Installation Instructions](https://pub.dev/packages/permission\_handler#setup)
 
-{% hint style="warning" %}
+{% hint style="info" %}
 This library has not been tested on iOS devices
 {% endhint %}
 

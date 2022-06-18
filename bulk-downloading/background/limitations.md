@@ -19,3 +19,11 @@ Therefore there is no guaranteed behaviour when using this functionality. You ca
 To try and help your users get to the right settings quicker, use the `requestIgnoreBatteryOptimizations()` method before starting a background download. This will interrupt the app with either a dialog or a settings page where they can opt-in to reduced throttling. There is no guarantee that this will work, but it should help: this is not required and the background download will still _try_ to run even if the user denies the permissions.
 
 If the download doesn't start, your app may be being throttled by the system already. Try setting `useAltMethod` to `true` in this case, or fallback to downloading in the foreground.
+
+## Recovery Effectiveness
+
+The effectiveness of the [recovery system](../../recovery/introduction.md) is reduced by background downloading.
+
+If the user leaves the application, then the recovery system may report the ongoing background download as failed, as it has no way of knowing about it. If the user tries to retry the download, both downloads may then fail, and the recovery system may fail also.
+
+There is no way of resolving this situation. You may prefer to disable recovery on background downloads all together.

@@ -17,4 +17,4 @@ Avoid using `access`. If you choose to use it within your application, I may be 
 
 ## Available APIs
 
-Documentation to be completed
+Documentation to be completed.

@@ -21,11 +21,21 @@ This package is not responsible for your misuse of another tile server.
 
 ## Available APIs
 
-| API                 | Explanation                                   |
-| ------------------- | --------------------------------------------- |
-| `startForeground()` | Start a download in the foreground            |
-| `startBackground()` | Start a download in the background            |
-| `check()`           | Check the number of tiles in a certain region |
-| `cancel()`          | Cancel any ongoing downloads                  |
+All APIs listed in this section are children of the [`download` getter](../usage/roots-and-stores/download.md).
 
-These are covered in more detail in other pages.
+| API                                      | Explanation                                   |
+| ---------------------------------------- | --------------------------------------------- |
+| ``[`startForeground()`](foreground.md)`` | Start a download in the foreground            |
+| ``[`startBackground()`](background/)``   | Start a download in the background            |
+| ``[`check()`](prepare.md)``              | Check the number of tiles in a certain region |
+| ``[`cancel()`](cancel-download.md)``     | Cancel any ongoing downloads                  |
+
+## Recovery
+
+The recovery system is designed to support bulk downloading, and provide some form of recovery if the download fails unexpectedly - this might happen if the app crashes, for example.
+
+Read more about the recovery system here:
+
+{% content-ref url="../recovery/introduction.md" %}
+[introduction.md](../recovery/introduction.md)
+{% endcontent-ref %}

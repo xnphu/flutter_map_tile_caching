@@ -31,6 +31,11 @@
 * [3⃣ Start In Background](bulk-downloading/background/README.md)
   * [Limitations](bulk-downloading/background/limitations.md)
 * [4⃣ Listen For Progress](bulk-downloading/progress.md)
+* [Cancel Download](bulk-downloading/cancel-download.md)
+
+## Recovery
+
+* [Introduction](recovery/introduction.md)
 
 ***
 

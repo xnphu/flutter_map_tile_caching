@@ -26,7 +26,7 @@ final downloadable = region.toDownloadable(
 | `crs`                                        | `Crs`                     | Map projection to use to calculate tiles                      | `const Epsg3857()` |
 | `errorHandler`                               | `void Function(Object?)?` | Function to be called if a tile fails to download             |                    |
 
-## Sea Tile Removal
+### Sea Tile Removal
 
 By not storing pure tiles of sea, we can save a bunch of space on the user's device with every download. But how to do this?
 
@@ -37,3 +37,9 @@ In this way, we can delete tiles after we've checked them, if they are indeed se
 {% hint style="info" %}
 Sea Tile Removal does not reduce time or data consumption. Every tile must still be downloaded to check it.
 {% endhint %}
+
+## Checking Number Of Tiles
+
+Before downloading the region, you can count the number of tiles it will attempt to download. This is done by the `check()` method.
+
+The method takes the `DownloadableRegion` generated above, and will return an `int` number of tiles.

@@ -11,7 +11,7 @@ Just import the package as you would normally, from the command line:
 ```
 
 {% hint style="success" %}
-This should automatically import the latest version of the package and create an entry for it in your pubspec.yaml. Otherwise follow the old method and add the latest version of the 'flutter\_map' dependency to the pubspec.yaml manually.
+This should automatically import the latest version of the package and create an entry for it in your pubspec.yaml. Otherwise follow the old method and add the latest version of the 'flutter\_map_\__tile\_caching' dependency to the pubspec.yaml manually.
 {% endhint %}
 
 ## From [github.com](https://github.com/JaffaKetchup/flutter\_map\_tile\_caching)
